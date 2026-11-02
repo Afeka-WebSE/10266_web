@@ -1,0 +1,84 @@
+/* Universal reset and box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  /* Flexbox setup to make the main content take full height */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  flex: 1;
+  /* Center the control box perfectly in the middle of the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  /* Arrange internal elements vertically */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 350px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#server-status {
+  min-height: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* Dynamic status classes added via JavaScript */
+.status-loading {
+  color: gray;
+}
+
+.status-success {
+  color: green;
+}
+
+.status-error {
+  color: red;
+}
