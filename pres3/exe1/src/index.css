@@ -1,0 +1,118 @@
+/* src/index.css */
+
+/* 1. CSS Reset & Box Model Standard */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* 2. Full-Height Sticky Footer Layout using Flexbox */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 3. Navbar Styling (Horizontal Layout) */
+.navbar {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h2 {
+  font-size: 1.4rem;
+  color: #38bdf8; /* React-style light blue */
+}
+
+.navbar nav ul {
+  list-style: none; /* Removes the ugly bullet points */
+  display: flex;
+  gap: 25px;        /* Clean spacing between links */
+}
+
+.navbar nav a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar nav a:hover {
+  color: #38bdf8;
+}
+
+/* 4. Main Content Styling (Card-like appearance) */
+.main-content {
+  flex: 1; /* Pushes the footer to the bottom of the screen */
+  max-width: 850px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.main-content h1 {
+  color: #0f172a;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.main-content p {
+  color: #475569;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.main-content section {
+  background-color: #f8fafc;
+  padding: 1.5rem 2rem;
+  border-left: 4px solid #38bdf8;
+  border-radius: 6px;
+}
+
+.main-content h3 {
+  color: #1e293b;
+  margin-bottom: 0.8rem;
+}
+
+.main-content ul {
+  padding-left: 1.5rem;
+  color: #334155;
+}
+
+.main-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* 5. Footer Styling */
+.footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+.footer h3 {
+  color: #f8fafc;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.footer p {
+  font-size: 0.85rem;
+}
