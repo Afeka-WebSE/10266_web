@@ -5,7 +5,9 @@ import DeveloperCard from './components/DeveloperCard';
 
 const App = () => {
   // Calculating available developers in the logic layer
-  const availableDevsCount = developersData.filter(dev => dev.isAvailable).length;
+  const availableDevsCount = developersData
+      .filter(dev => dev.isAvailable).length;
+
 
   return (
       <div className="app-layout">
