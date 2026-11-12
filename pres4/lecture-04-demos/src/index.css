@@ -1,0 +1,80 @@
+/* src/index.css - Global Reset & Lecture Shell */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.lecture-navbar {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 12px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.lecture-title {
+  font-size: 1rem;
+  color: #38bdf8;
+}
+
+.lecture-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tab {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+.tab.active {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border-color: #38bdf8;
+}
+
+/* Special highlight for Exercise tabs */
+.tab.ex-tab {
+  border-color: #f59e0b;
+  color: #fcd34d;
+}
+
+.tab.ex-tab.active {
+  background-color: #f59e0b;
+  color: #0f172a;
+}
+
+.lecture-stage {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 65px);
+}

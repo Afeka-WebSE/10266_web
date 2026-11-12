@@ -1,0 +1,133 @@
+/* src/ex2-task-manager/Tasks.css */
+.task-manager-card {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.tm-header {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tm-header h2 {
+    font-size: 1.3rem;
+    color: #38bdf8;
+}
+
+.tm-header p {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.task-list {
+    list-style: none;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 5px solid #3b82f6;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.task-item.completed {
+    background-color: #f0fdf4;
+    border-color: #bbf7d0;
+    border-left-color: #22c55e;
+    opacity: 0.85;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.task-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #0f172a;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: #64748b;
+}
+
+.task-assignee {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-toggle, .btn-delete, .btn-reset {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-toggle {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.btn-toggle:hover {
+    background-color: #bae6fd;
+}
+
+.btn-delete {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.btn-delete:hover {
+    background-color: #fecaca;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.empty-msg {
+    font-size: 1.1rem;
+    color: #16a34a;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.btn-reset {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 18px;
+}
+
+.btn-reset:hover {
+    background-color: #1d4ed8;
+}
