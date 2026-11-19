@@ -5,12 +5,12 @@ import { useState } from 'react';
 // import BatchingDemo from './components/demo2-batching/BatchingDemo';
 // import ObjectUpdateDemo from './components/demo2-batching/ObjectUpdateDemo';
 // import ServerMonitorSolution from './components/ex1-server-monitor/ServerMonitorSolution';
-// import TaskManagerSolution from './components/ex2-task-manager/TaskManagerSolution';
+import TaskManagerSolution from './components/ex2-task-manager/TaskManagerSolution';
+import ServerMonitorSolution from "./components/ex1-server-monitor/ServerMonitorSolution.tsx";
 // import WorkingCounterFixed from "./components/demo1-broken-counter/WorkingCounterFixed.tsx";
 // import ServerPingTracker from "./components/demo3-lifecycle/ServerPingTracker.tsx";
 // import FetchPatternDemo from "./components/demo4-fetch/FetchPatternDemo.tsx";
 // import StorefrontSolution from "./components/ex3-storefront/StorefrontSolution.tsx";
-import ServerMonitorStarter from "./components/ex1-server-monitor/ServerMonitorStarter.tsx";
 
 // Defining valid tab keys for strict TypeScript safety
 type LessonView =
@@ -21,8 +21,8 @@ type LessonView =
     // | 'object'
     // | 'ServerPingTracker'
     // | 'FetchPatternDemo'
-    | 'ex1';
-    // | 'ex2'
+    | 'ex1'
+    | 'ex2';
     // | 'ex3';
 
 const App = () => {
@@ -95,12 +95,12 @@ const App = () => {
               🛠️ Ex 1: Server Monitor
             </button>
 
-            {/*<button*/}
-            {/*    className={activeView === 'ex2' ? 'tab ex-tab active' : 'tab ex-tab'}*/}
-            {/*    onClick={() => setActiveView('ex2')}*/}
-            {/*>*/}
-            {/*  🛠️ Ex 2: Task Manager*/}
-            {/*</button>*/}
+            <button
+                className={activeView === 'ex2' ? 'tab ex-tab active' : 'tab ex-tab'}
+                onClick={() => setActiveView('ex2')}
+            >
+              🛠️ Ex 2: Task Manager
+            </button>
 
             {/*<button*/}
             {/*    className={activeView === 'ex3' ? 'tab ex-tab active' : 'tab ex-tab'}*/}
@@ -120,8 +120,8 @@ const App = () => {
           {/*{activeView === 'object' && <ObjectUpdateDemo />}*/}
           {/*{activeView === 'ServerPingTracker' && <ServerPingTracker />}*/}
           {/*{activeView === 'FetchPatternDemo' && <FetchPatternDemo />}*/}
-          {activeView === 'ex1' && <ServerMonitorStarter />}
-          {/*{activeView === 'ex2' && <TaskManagerSolution />}*/}
+          {activeView === 'ex1' && <ServerMonitorSolution />}
+          {activeView === 'ex2' && <TaskManagerSolution />}
           {/*{activeView === 'ex3' && <StorefrontSolution />}*/}
         </main>
 

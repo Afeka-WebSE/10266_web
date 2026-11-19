@@ -1,0 +1,77 @@
+/* src/exercises/ex1-escape-room/EscapeRoom.css */
+.booking-card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.booking-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.field-group input[type='text'],
+.field-group input[type='number'],
+.field-group select {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.field-group input.invalid {
+  border-color: #ef4444;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: normal !important;
+}
+
+.error {
+  color: #b91c1c;
+  background-color: #fef2f2;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.btn-book {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-book:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
