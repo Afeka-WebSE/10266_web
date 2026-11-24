@@ -1,0 +1,171 @@
+/* src/exercises/ex3-hr-portal/portal.css */
+.portal {
+  width: 100%;
+  max-width: 920px;
+}
+
+/* ---------- Navbar ---------- */
+.portal-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 14px 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.portal-navbar h2 {
+  font-size: 1.2rem;
+}
+
+.portal-links {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-link {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+/* NavLink adds class="active" automatically when the URL matches */
+.nav-link.active {
+  color: #38bdf8;
+  border-bottom-color: #38bdf8;
+}
+
+/* ---------- Page container ---------- */
+.portal-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.portal-content h2 {
+  margin-bottom: 20px;
+}
+
+/* ---------- Directory ---------- */
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toolbar input,
+.toolbar select,
+.employee-form input,
+.employee-form select {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.toolbar input {
+  flex: 2;
+}
+
+.toolbar select {
+  flex: 1;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.employee-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f8fafc;
+}
+
+.employee-card p {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 6px 0 14px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #94a3b8;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* ---------- Buttons (also used on <Link>) ---------- */
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.btn-primary { background-color: #2563eb; }
+.btn-secondary { background-color: #e2e8f0; color: #0f172a; }
+.btn-view { background-color: #10b981; }
+.btn-edit { background-color: #f59e0b; }
+.btn-delete { background-color: #ef4444; }
+
+.btn:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* ---------- Profile ---------- */
+.profile {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background-color: #38bdf8;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile p {
+  margin: 6px 0;
+}
+
+.profile .card-actions {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* ---------- Form ---------- */
+.employee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 420px;
+}

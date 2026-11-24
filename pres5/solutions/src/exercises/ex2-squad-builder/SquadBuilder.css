@@ -1,0 +1,103 @@
+/* src/exercises/ex2-squad-builder/SquadBuilder.css */
+.squad-card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.squad-card h2 {
+  text-align: center;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.power-counter {
+  background-color: #0f172a;
+  color: #38bdf8;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.hero-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.hero-form input,
+.search-input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  min-width: 0;
+}
+
+.hero-form input[name='name'],
+.hero-form input[name='superpower'] {
+  flex: 2;
+}
+
+.hero-form input[name='power'] {
+  flex: 1;
+}
+
+.btn-add {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #10b981;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.search-input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.hero-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.hero-item small {
+  display: block;
+  color: #64748b;
+}
+
+.power-badge {
+  background-color: #e2e8f0;
+  color: #475569;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.empty-state {
+  text-align: center;
+  color: #94a3b8;
+  font-style: italic;
+  padding: 20px;
+}
